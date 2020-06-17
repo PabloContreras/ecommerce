@@ -16,5 +16,8 @@ namespace MaterialTec.Models
     {
         public int ID { get; set; }
         public System.DateTime CRATED_AT { get; set; }
+        public string FK_USR { get; set; }
+    
+        public virtual USUARIO USUARIO { get; set; }
     }
 }

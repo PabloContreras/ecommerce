@@ -40,5 +40,6 @@ namespace MaterialTec.Models
         public virtual ICollection<ORDEN> ORDENs { get; set; }
         public virtual ICollection<PEDIDO_PROVEEDOR> PEDIDO_PROVEEDOR { get; set; }
         public virtual ROL ROL { get; set; }
+        public virtual AGENTE_VENTA AGENTE_VENTA { get; set; }
     }
 }

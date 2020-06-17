@@ -647,6 +647,8 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CRATED_AT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FK_USR" Type="String" Nullable="false" />
+          <NavigationProperty Name="USUARIO" Relationship="MATERIALTECModel.AGENTE_VENTAUSUARIO" FromRole="AGENTE_VENTA" ToRole="USUARIO" />
         </EntityType>
         <EntityType Name="ALMACEN">
           <Key>
@@ -925,6 +927,7 @@
           <NavigationProperty Name="ORDENs" Relationship="Self.FK__ORDEN__FK_CLIENT__68487DD7" FromRole="USUARIO" ToRole="ORDEN" />
           <NavigationProperty Name="PEDIDO_PROVEEDOR" Relationship="Self.FK__PEDIDO_PR__FK_US__06CD04F7" FromRole="USUARIO" ToRole="PEDIDO_PROVEEDOR" />
           <NavigationProperty Name="ROL" Relationship="Self.FK__USUARIO__FK_ID_R__4D94879B" FromRole="USUARIO" ToRole="ROL" />
+          <NavigationProperty Name="AGENTE_VENTA" Relationship="MATERIALTECModel.AGENTE_VENTAUSUARIO" FromRole="USUARIO" ToRole="AGENTE_VENTA" />
         </EntityType>
         <Association Name="FK__PRODUCTO__FK_ALM__5CD6CB2B">
           <End Role="ALMACEN" Type="Self.ALMACEN" Multiplicity="1" />
@@ -1317,7 +1320,15 @@
             <End Role="ROL" EntitySet="ROLs" />
             <End Role="USUARIO" EntitySet="USUARIOs" />
           </AssociationSet>
+          <AssociationSet Name="AGENTE_VENTAUSUARIO" Association="MATERIALTECModel.AGENTE_VENTAUSUARIO">
+            <End Role="AGENTE_VENTA" EntitySet="AGENTE_VENTA" />
+            <End Role="USUARIO" EntitySet="USUARIOs" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="AGENTE_VENTAUSUARIO">
+          <End Type="MATERIALTECModel.AGENTE_VENTA" Role="AGENTE_VENTA" Multiplicity="1" />
+          <End Type="MATERIALTECModel.USUARIO" Role="USUARIO" Multiplicity="1" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
