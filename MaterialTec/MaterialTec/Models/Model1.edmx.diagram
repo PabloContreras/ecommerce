@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f8b996acc471461d93178334c7f9a8c6" Name="Diagram1" ZoomLevel="59">
+        <EntityTypeShape EntityType="MATERIALTECModel.AGENTE_VENTA" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.ALMACEN" Width="1.5" PointX="8.25" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.CATEGORIA" Width="1.5" PointX="8.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.CHAT" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.DEVOLUCION_PEDIDO" Width="1.5" PointX="10.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.DIRECCION" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.FACTURA" Width="1.5" PointX="10.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.FACTURA_PRODUCTO" Width="1.5" PointX="12.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.IMAGEN_PRODUCTO" Width="1.5" PointX="12.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.METODO_PAGO" Width="1.5" PointX="6" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.ORDEN" Width="1.5" PointX="8.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.ORDEN_PRODUCTO" Width="1.5" PointX="10.5" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PEDIDO_PROVEEDOR" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PRODUCTO" Width="1.5" PointX="10.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PRODUCTO_PEDIDO" Width="1.5" PointX="13.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PRODUCTO_PROMOCION" Width="1.5" PointX="15.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PRODUCTO_PROVEEDOR" Width="1.5" PointX="11.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PROMOCION" Width="1.5" PointX="13.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.PROVEEDOR" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.ROL" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.TIPO_PROMOCION" Width="1.5" PointX="13.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MATERIALTECModel.USUARIO" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO__FK_ALM__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO__FK_CAT__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__CHAT__FK_DESTINA__22751F6C" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__CHAT__FK_REMITEN__236943A5" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__DEVOLUCIO__FK_PE__1BC821DD" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__DEVOLUCIO__FK_PR__1CBC4616" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__DIRECCION__FK_CL__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__FACTURA__FK_PEDI__0A9D95DB" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__FACTURA_P__FK_FA__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__FACTURA_P__FK_PR__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__IMAGEN_PR__FK_PR__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__ORDEN__FK_METODO__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__ORDEN__FK_CLIENT__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__ORDEN_PRO__FK_OR__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__ORDEN_PRO__FK_PR__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PEDIDO_PR__FK_PR__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PEDIDO_PR__FK_US__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO___FK_PE__17F790F9" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO___FK_PR__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO___FK_PR__17036CC0" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO___FK_PR__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__PRODUCTO___FK_TI__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="MATERIALTECModel.FK__USUARIO__FK_ID_R__4D94879B" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
