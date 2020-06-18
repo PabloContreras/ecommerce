@@ -15,7 +15,8 @@ namespace MaterialTec
 
             routes.MapRoute(
                 "Product", 
-                "Product/Index", 
+                "Admin/{controller}/{action}", 
+
                 new { controller = "Admin/Product", action = "Index" });
 
             routes.MapRoute(
